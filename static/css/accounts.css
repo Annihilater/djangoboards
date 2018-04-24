@@ -1,0 +1,16 @@
+body {
+    background-image: url(../img/ricepaper_v3.png);
+}
+
+.logo {
+    font-family: 'Peralta', cursive;
+}
+
+.logo {
+    color: rgba(0,0,0,.9);
+}
+
+.logo a:hover,
+.logo a:active {
+    text-decoration: none;
+}
