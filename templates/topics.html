@@ -42,7 +42,7 @@
                             <a href="{{ topic_url }}">{{ topic.subject }}</a>
                         </p>
                         <small class="text-muted">
-                            Pages:
+                            页数:
                             {% for i in topic.get_page_range %}
                                 <a href="{{ topic_url }}?page={{ i }}">{{ i }}</a>
                             {% endfor %}

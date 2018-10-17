@@ -16,7 +16,7 @@
 {% block content %}
 
     <div class="mb-4">
-        <a href="{% url 'reply_topic' topic.board.pk topic.pk %}" class="btn btn-primary" role="button">Reply</a>
+        <a href="{% url 'reply_topic' topic.board.pk topic.pk %}" class="btn btn-primary" role="button">回复</a>
     </div>
 
     {% for post in posts %}
@@ -28,7 +28,7 @@
                 <div class="row">
                     <div class="col-2">
                         <img src="{{ post.created_by|gravatar }}" alt="{{ post.created_by.username }}" class="w-100 rounded">
-                        <small>Posts: {{ post.created_by.posts.count }}</small>
+                        <small>第 {{ post.created_by.posts.count }} 篇贴</small>
                     </div>
                     <div class="col-10">
                         <div class="row mb-3">
