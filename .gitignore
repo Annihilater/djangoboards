@@ -107,8 +107,9 @@ venv.bak/
 *.idea
 .idea
 
-# macos file's hidden attribute 
+# macos file's hidden attribute
 *.DS_Store
 .DS_Store
 
 
+/.vscode/
