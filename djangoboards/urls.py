@@ -16,11 +16,15 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
+from django.contrib.sitemaps.views import sitemap
 
 from accounts import views as accounts_views
 from boards import views
+from util.site_map import sitemaps
 
 urlpatterns = [
+    url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps},
+        name='django.contrib.sitemaps.views.sitemap'),
     url(r"^$", views.BoardListView.as_view(), name="home"),
     url(r"^signup/$", accounts_views.signup, name="signup"),
     url(
